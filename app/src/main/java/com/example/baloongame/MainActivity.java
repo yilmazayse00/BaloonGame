@@ -90,7 +90,9 @@ public class MainActivity extends AppCompatActivity {
                 alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                       finish();
+                        Intent intent = new Intent(getApplicationContext(),HomeActivity.class);
+                        startActivity(intent);
+                        finish();
                     }});
                 alert.show();
             }
