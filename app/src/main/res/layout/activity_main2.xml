@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="152dp"
+        android:layout_height="53dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="Süre : 60"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="152dp"
+        android:layout_height="53dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="Skor : 0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTimer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTimer"
+        app:layout_constraintTop_toTopOf="@+id/tvTimer" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/a1"
+        android:layout_width="186dp"
+        android:layout_height="207dp"
+        android:layout_marginTop="4dp"
+        android:onClick="increaseScore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimer"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="baloon.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/a2"
+        android:layout_width="207dp"
+        android:layout_height="210dp"
+        android:onClick="increaseScore"
+        app:layout_constraintBottom_toBottomOf="@+id/a3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toEndOf="@+id/a1"
+        app:layout_constraintTop_toTopOf="@+id/a3"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="baloon.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/a3"
+        android:layout_width="189dp"
+        android:layout_height="209dp"
+        android:onClick="increaseScore"
+        app:layout_constraintBottom_toBottomOf="@+id/a1"
+        app:layout_constraintEnd_toEndOf="@+id/a2"
+        app:layout_constraintStart_toStartOf="@+id/a1"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimer"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="baloon.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/a4"
+        android:layout_width="189dp"
+        android:layout_height="213dp"
+        android:layout_marginTop="1dp"
+        android:onClick="increaseScore"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a1"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="baloon.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/a5"
+        android:layout_width="190dp"
+        android:layout_height="217dp"
+        android:layout_marginStart="108dp"
+        android:onClick="increaseScore"
+        app:layout_constraintBottom_toTopOf="@+id/a7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintStart_toStartOf="@+id/a4"
+        app:layout_constraintTop_toBottomOf="@+id/a1"
+        app:layout_constraintVertical_bias="1.0"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="baloon.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/a6"
+        android:layout_width="178dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="32dp"
+        android:onClick="increaseScore"
+        app:layout_constraintBottom_toTopOf="@+id/a8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.985"
+        app:layout_constraintStart_toStartOf="@+id/a5"
+        app:layout_constraintTop_toBottomOf="@+id/a3"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="baloon.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/a7"
+        android:layout_width="195dp"
+        android:layout_height="229dp"
+        android:layout_marginStart="8dp"
+        android:onClick="increaseScore"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a1"
+        app:layout_constraintVertical_bias="0.812"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="baloon.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/a8"
+        android:layout_width="186dp"
+        android:layout_height="242dp"
+        android:onClick="increaseScore"
+        app:layout_constraintBottom_toBottomOf="@+id/a7"
+        app:layout_constraintEnd_toEndOf="@+id/a9"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="@+id/a7"
+        app:layout_constraintTop_toBottomOf="@+id/a3"
+        app:layout_constraintVertical_bias="0.883"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="baloon.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/a9"
+        android:layout_width="196dp"
+        android:layout_height="232dp"
+        android:onClick="increaseScore"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/a7"
+        app:layout_constraintTop_toBottomOf="@+id/a2"
+        app:layout_constraintVertical_bias="0.824"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="baloon.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
